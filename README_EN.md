@@ -40,23 +40,7 @@ Two separate downloads are required before running any script.
 
 The raw ETDD70 data is **not included** in this repository. Download it and place all files inside the `data/` folder.
 
-**Download**: _[ETDD70 Zenodo DOI — see the paper]_
-
-### 2. Research group outputs (~100 GB) — pre-computed synthetic data
-
-The synthetic data and evaluation results produced by our group are hosted on Zenodo in two deposits:
-
-| Deposit       | Contents                                                                                  | Size   |
-| ------------- | ----------------------------------------------------------------------------------------- | ------ |
-| **Deposit 1** | `ga2_tstr_output/`, `sgg_tstr_output/`, `dcm_tstr_output/` — 20 synthetic sets per method | ~50 GB |
-| **Deposit 2** | `syn_output/`, `tstr_results/` — generation outputs and TSTR evaluation results           | ~50 GB |
-
-**Deposit 1**: _[Zenodo DOI — see the paper]_
-**Deposit 2**: _[Zenodo DOI — see the paper]_
-
-> To reproduce the results from the paper without re-running Phase 1–4, download both deposits and extract each folder into the project root, then run Phase 5 directly.
-
----
+**Download**: [ETDD70 dataset (~500 MB)](https://drive.google.com/drive/folders/15tfAwfem7B489nL317xOkOsJdb5EtDNN?usp=sharing)
 
 ## Requirements
 

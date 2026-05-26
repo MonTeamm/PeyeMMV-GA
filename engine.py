@@ -2325,7 +2325,7 @@ def main() -> None:
     parser.add_argument(
         "--weight_candidates",
         type=str,
-        default="10:1:3;7:1.5:10;10:2:5;10:5:3;8:3:10",
+        default="10:1:3;15:1:3;10:2:5;10:5:3;8:2:10",
     )
     parser.add_argument("--min_detection", type=float, default=0.90)
     parser.add_argument("--output_json", type=str, default=None)

@@ -81,15 +81,15 @@ def worker_theta_ga2(args_tuple):
     is_dyslexic = label_map.get(str(sid), 0) == 1
     if is_dyslexic:
         CFG["H_DELTA"]  = 0.12          # wider search range
-        CFG["W1_D"]     = 7.0           # lighter detection penalty
-        CFG["W2_O"]     = 1.5           # lighter outlier penalty
+        CFG["W1_D"]     = 8.0           # lighter detection penalty
+        CFG["W2_O"]     = 2.5           # lighter outlier penalty
         # sigma upper bound multiplier, read by initialize_population
         CFG["_SIGMA_HIGH_MULT"] = 4.0
         CFG["_H_CENTER_OFFSET"] = -0.05 # shift H search centre downward
     else:
         CFG["H_DELTA"]  = 0.08          # snarrower search range, stable
         CFG["W1_D"]     = 8.0
-        CFG["W2_O"]     = 3.0
+        CFG["W2_O"]     = 2.0
         CFG["_SIGMA_HIGH_MULT"] = 2.0
         CFG["_H_CENTER_OFFSET"] = 0.0
     # W3_E unchanged for both groups

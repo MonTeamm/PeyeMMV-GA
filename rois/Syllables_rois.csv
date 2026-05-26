@@ -1,0 +1,101 @@
+id,stimfile,content,kind,name,x,y,width,height,line,part,column
+0,s7_stimuli_t1.jpg,,line,line 1,290,141,1098,39,1,,
+1,s7_stimuli_t1.jpg,ma,sub-line,line 1 part 1,290,141,88,39,1,1,1
+2,s7_stimuli_t1.jpg,si,sub-line,line 1 part 2,419,141,88,39,1,2,2
+3,s7_stimuli_t1.jpg,mu,sub-line,line 1 part 3,545,141,88,39,1,3,3
+4,s7_stimuli_t1.jpg,zu,sub-line,line 1 part 4,672,141,88,39,1,4,4
+5,s7_stimuli_t1.jpg,da,sub-line,line 1 part 5,796,141,88,39,1,5,5
+6,s7_stimuli_t1.jpg,jo,sub-line,line 1 part 6,922,141,88,39,1,6,6
+7,s7_stimuli_t1.jpg,ke,sub-line,line 1 part 7,1046,141,88,39,1,7,7
+8,s7_stimuli_t1.jpg,py,sub-line,line 1 part 8,1174,141,88,39,1,8,8
+9,s7_stimuli_t1.jpg,za,sub-line,line 1 part 9,1300,141,88,39,1,9,9
+10,s7_stimuli_t1.jpg,,line,line 2,290,217,1098,39,2,,
+11,s7_stimuli_t1.jpg,vo,sub-line,line 2 part 1,290,217,88,39,2,1,1
+12,s7_stimuli_t1.jpg,lu,sub-line,line 2 part 2,419,217,88,39,2,2,2
+13,s7_stimuli_t1.jpg,re,sub-line,line 2 part 3,545,217,88,39,2,3,3
+14,s7_stimuli_t1.jpg,vi,sub-line,line 2 part 4,672,217,88,39,2,4,4
+15,s7_stimuli_t1.jpg,zo,sub-line,line 2 part 5,796,217,88,39,2,5,5
+16,s7_stimuli_t1.jpg,be,sub-line,line 2 part 6,922,217,88,39,2,6,6
+17,s7_stimuli_t1.jpg,ru,sub-line,line 2 part 7,1046,217,88,39,2,7,7
+18,s7_stimuli_t1.jpg,pe,sub-line,line 2 part 8,1174,217,88,39,2,8,8
+19,s7_stimuli_t1.jpg,te,sub-line,line 2 part 9,1300,217,88,39,2,9,9
+20,s7_stimuli_t1.jpg,,line,line 3,290,293,1098,39,3,,
+21,s7_stimuli_t1.jpg,suk,sub-line,line 3 part 1,290,293,88,39,3,1,1
+22,s7_stimuli_t1.jpg,mák,sub-line,line 3 part 2,419,293,88,39,3,2,2
+23,s7_stimuli_t1.jpg,nos,sub-line,line 3 part 3,545,293,88,39,3,3,3
+24,s7_stimuli_t1.jpg,sen,sub-line,line 3 part 4,672,293,88,39,3,4,4
+25,s7_stimuli_t1.jpg,výr,sub-line,line 3 part 5,796,293,88,39,3,5,5
+26,s7_stimuli_t1.jpg,mech,sub-line,line 3 part 6,922,293,88,39,3,6,6
+27,s7_stimuli_t1.jpg,len,sub-line,line 3 part 7,1046,293,88,39,3,7,7
+28,s7_stimuli_t1.jpg,gól,sub-line,line 3 part 8,1174,293,88,39,3,8,8
+29,s7_stimuli_t1.jpg,cíp,sub-line,line 3 part 9,1300,293,88,39,3,9,9
+30,s7_stimuli_t1.jpg,,line,line 4,290,365,1098,39,4,,
+31,s7_stimuli_t1.jpg,nov,sub-line,line 4 part 1,290,365,88,39,4,1,1
+32,s7_stimuli_t1.jpg,lar,sub-line,line 4 part 2,419,365,88,39,4,2,2
+33,s7_stimuli_t1.jpg,for,sub-line,line 4 part 3,545,365,88,39,4,3,3
+34,s7_stimuli_t1.jpg,zul,sub-line,line 4 part 4,672,365,88,39,4,4,4
+35,s7_stimuli_t1.jpg,bed,sub-line,line 4 part 5,796,365,88,39,4,5,5
+36,s7_stimuli_t1.jpg,lum,sub-line,line 4 part 6,922,365,88,39,4,6,6
+37,s7_stimuli_t1.jpg,nev,sub-line,line 4 part 7,1046,365,88,39,4,7,7
+38,s7_stimuli_t1.jpg,zek,sub-line,line 4 part 8,1174,365,88,39,4,8,8
+39,s7_stimuli_t1.jpg,vod,sub-line,line 4 part 9,1300,365,88,39,4,9,9
+40,s7_stimuli_t1.jpg,,line,line 5,290,444,1098,39,5,,
+41,s7_stimuli_t1.jpg,vl,sub-line,line 5 part 1,290,444,88,39,5,1,1
+42,s7_stimuli_t1.jpg,bz,sub-line,line 5 part 2,419,444,88,39,5,2,2
+43,s7_stimuli_t1.jpg,hr,sub-line,line 5 part 3,545,444,88,39,5,3,3
+44,s7_stimuli_t1.jpg,dr,sub-line,line 5 part 4,672,444,88,39,5,4,4
+45,s7_stimuli_t1.jpg,sl,sub-line,line 5 part 5,796,444,88,39,5,5,5
+46,s7_stimuli_t1.jpg,kr,sub-line,line 5 part 6,922,444,88,39,5,6,6
+47,s7_stimuli_t1.jpg,ol,sub-line,line 5 part 7,1046,444,88,39,5,7,7
+48,s7_stimuli_t1.jpg,ml,sub-line,line 5 part 8,1174,444,88,39,5,8,8
+49,s7_stimuli_t1.jpg,fr,sub-line,line 5 part 9,1300,444,88,39,5,9,9
+50,s7_stimuli_t1.jpg,,line,line 6,290,519,1098,39,6,,
+51,s7_stimuli_t1.jpg,tra,sub-line,line 6 part 1,290,519,88,39,6,1,1
+52,s7_stimuli_t1.jpg,mle,sub-line,line 6 part 2,419,519,88,39,6,2,2
+53,s7_stimuli_t1.jpg,tve,sub-line,line 6 part 3,545,519,88,39,6,3,3
+54,s7_stimuli_t1.jpg,kro,sub-line,line 6 part 4,672,519,88,39,6,4,4
+55,s7_stimuli_t1.jpg,dlu,sub-line,line 6 part 5,796,519,88,39,6,5,5
+56,s7_stimuli_t1.jpg,sku,sub-line,line 6 part 6,922,519,88,39,6,6,6
+57,s7_stimuli_t1.jpg,bru,sub-line,line 6 part 7,1046,519,88,39,6,7,7
+58,s7_stimuli_t1.jpg,pla,sub-line,line 6 part 8,1174,519,88,39,6,8,8
+59,s7_stimuli_t1.jpg,klu,sub-line,line 6 part 9,1300,519,88,39,6,9,9
+60,s7_stimuli_t1.jpg,,line,line 7,290,596,1098,39,7,,
+61,s7_stimuli_t1.jpg,vle,sub-line,line 7 part 1,290,596,88,39,7,1,1
+62,s7_stimuli_t1.jpg,tra,sub-line,line 7 part 2,419,596,88,39,7,2,2
+63,s7_stimuli_t1.jpg,mru,sub-line,line 7 part 3,545,596,88,39,7,3,3
+64,s7_stimuli_t1.jpg,čle,sub-line,line 7 part 4,672,596,88,39,7,4,4
+65,s7_stimuli_t1.jpg,chlu,sub-line,line 7 part 5,796,596,88,39,7,5,5
+66,s7_stimuli_t1.jpg,pro,sub-line,line 7 part 6,922,596,88,39,7,6,6
+67,s7_stimuli_t1.jpg,zlu,sub-line,line 7 part 7,1046,596,88,39,7,7,7
+68,s7_stimuli_t1.jpg,sla,sub-line,line 7 part 8,1174,596,88,39,7,8,8
+69,s7_stimuli_t1.jpg,fro,sub-line,line 7 part 9,1300,596,88,39,7,9,9
+70,s7_stimuli_t1.jpg,,line,line 8,290,670,1098,39,8,,
+71,s7_stimuli_t1.jpg,pluh,sub-line,line 8 part 1,290,670,88,39,8,1,1
+72,s7_stimuli_t1.jpg,hrom,sub-line,line 8 part 2,419,670,88,39,8,2,2
+73,s7_stimuli_t1.jpg,mlýn,sub-line,line 8 part 3,545,670,88,39,8,3,3
+74,s7_stimuli_t1.jpg,dnes,sub-line,line 8 part 4,672,670,88,39,8,4,4
+75,s7_stimuli_t1.jpg,plot,sub-line,line 8 part 5,796,670,88,39,8,5,5
+76,s7_stimuli_t1.jpg,zvuk,sub-line,line 8 part 6,922,670,88,39,8,6,6
+77,s7_stimuli_t1.jpg,vnuk,sub-line,line 8 part 7,1046,670,88,39,8,7,7
+78,s7_stimuli_t1.jpg,lhář,sub-line,line 8 part 8,1174,670,88,39,8,8,8
+79,s7_stimuli_t1.jpg,kmen,sub-line,line 8 part 9,1300,670,88,39,8,9,9
+80,s7_stimuli_t1.jpg,,line,line 9,290,746,1098,39,9,,
+81,s7_stimuli_t1.jpg,vpád,sub-line,line 9 part 1,290,746,88,39,9,1,1
+82,s7_stimuli_t1.jpg,stop,sub-line,line 9 part 2,419,746,88,39,9,2,2
+83,s7_stimuli_t1.jpg,hned,sub-line,line 9 part 3,545,746,88,39,9,3,3
+84,s7_stimuli_t1.jpg,vkus,sub-line,line 9 part 4,672,746,88,39,9,4,4
+85,s7_stimuli_t1.jpg,chlup,sub-line,line 9 part 5,796,746,88,39,9,5,5
+86,s7_stimuli_t1.jpg,zrak,sub-line,line 9 part 6,922,746,88,39,9,6,6
+87,s7_stimuli_t1.jpg,plat,sub-line,line 9 part 7,1046,746,88,39,9,7,7
+88,s7_stimuli_t1.jpg,vrak,sub-line,line 9 part 8,1174,746,88,39,9,8,8
+89,s7_stimuli_t1.jpg,zvon,sub-line,line 9 part 9,1300,746,88,39,9,9,9
+90,s7_stimuli_t1.jpg,,line,line 10,290,822,1098,39,10,,
+91,s7_stimuli_t1.jpg,tvrz,sub-line,line 10 part 1,290,822,88,39,10,1,1
+92,s7_stimuli_t1.jpg,skrz,sub-line,line 10 part 2,419,822,88,39,10,2,2
+93,s7_stimuli_t1.jpg,smrt,sub-line,line 10 part 3,545,822,88,39,10,3,3
+94,s7_stimuli_t1.jpg,brnk,sub-line,line 10 part 4,672,822,88,39,10,4,4
+95,s7_stimuli_t1.jpg,smrk,sub-line,line 10 part 5,796,822,88,39,10,5,5
+96,s7_stimuli_t1.jpg,blesk,sub-line,line 10 part 6,922,822,88,39,10,6,6
+97,s7_stimuli_t1.jpg,štěrk,sub-line,line 10 part 7,1046,822,88,39,10,7,7
+98,s7_stimuli_t1.jpg,kvést,sub-line,line 10 part 8,1174,822,88,39,10,8,8
+99,s7_stimuli_t1.jpg,bronz,sub-line,line 10 part 9,1300,822,88,39,10,9,9

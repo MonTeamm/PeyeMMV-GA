@@ -165,8 +165,8 @@ All random seeds are derived deterministically from subject ID, task name, and a
 
 ## Citation
 
-If you use this code, the ETDD70 dataset, or the pre-computed outputs in your work, please cite the paper:
+DOIS of the ETDD70 dataset:
 
 ```
-[Citation will be added after publication]
+[https://doi.org/10.5281/zenodo.17513247]
 ```

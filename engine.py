@@ -2319,13 +2319,13 @@ def main() -> None:
     parser.add_argument("--max_fixations_for_fitness", type=int, default=50)
 
     parser.add_argument("--population_candidates", type=str, default="10,30,50,100,200")
-    parser.add_argument("--generation_candidates", type=str, default="10,30,50")
+    parser.add_argument("--generation_candidates", type=str, default="10,30,50,100")
     parser.add_argument("--crossover_candidates", type=str, default="0.5,0.7,0.8,0.9")
     parser.add_argument("--mutation_candidates", type=str, default="0.05,0.1,0.15,0.2")
     parser.add_argument(
         "--weight_candidates",
         type=str,
-        default="10:1:3;15:1:3;10:2:5;10:5:3;8:2:10",
+        default="10:1:3;7:1.5:10;10:2:5;10:5:3;8:3:10",
     )
     parser.add_argument("--min_detection", type=float, default=0.90)
     parser.add_argument("--output_json", type=str, default=None)

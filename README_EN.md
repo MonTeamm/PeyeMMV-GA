@@ -9,6 +9,10 @@
 
 ## Directory structure
 
+## Repository Documentation
+
+For a comprehensive breakdown of all source files, command-line interfaces, and data schema specifications included in this repository, please refer to [REPOSITORY_STRUCTURE.md](./docs/REPOSITORY_STRUCTURE.md).
+
 ```
 project_root/
 ├── engine.py              ← GA engine, fBm synthesis, PeyeMMV fixation detector
@@ -35,6 +39,13 @@ project_root/
 ---
 
 ## Data download
+
+## Quick test with sample data (no need to download full ETDD70)
+
+The repository includes sample subjects at `examples/sample_data/`:
+
+```bash
+python examples/example_01_find_theta.py
 
 Two separate downloads are required before running any script.
 
@@ -63,6 +74,8 @@ Python **3.10 or later** is required. Tested on Python 3.11 and 3.12.
 ---
 
 ## Quick Start & Reproducing the full pipeline
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MonTeamm/PeyeMMV-GA/blob/main/examples/reproduce_paper_results.ipynb)
 
 Since the project is packaged as a standard Python software, you can execute the pipeline using the installed CLI commands.
 

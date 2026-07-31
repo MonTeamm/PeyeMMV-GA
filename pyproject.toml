@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peyemmv-ga"
+version = "1.0.0"
+description = "GA-optimized fBm synthetic gaze generation for dyslexia detection (PeyeMMV inverse problem)"
+readme = "README_EN.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Thi Quynh Hoa Nguyen"}, {name = "Duy Hai Nguyen"},
+    {name = "Gia Loc Tran"}, {name = "Thanh Ha Le"}, {name = "Thi Duyen Ngo"},
+]
+dependencies = [
+    "numpy==2.2.6",
+    "pandas==3.0.0",
+    "scipy==1.17.1",
+    "tqdm==4.67.3",
+    "scikit-learn==1.8.0",
+    "matplotlib==3.10.8",
+    "statsmodels==0.14.6",
+]
+
+[project.optional-dependencies]
+extra = ["xgboost==3.2.0", "catboost==1.2.10"]
+
+[project.scripts]
+peyemmv-find-theta       = "peyemmv_ga.cli.find_theta_ga2:main"
+peyemmv-ga2-generate     = "peyemmv_ga.cli.ga2_generate:main"
+peyemmv-ga2x20           = "peyemmv_ga.cli.ga2x20:main"
+peyemmv-sgg              = "peyemmv_ga.cli.sgg:main"
+peyemmv-sggx20           = "peyemmv_ga.cli.sggx20:main"
+peyemmv-dcm              = "peyemmv_ga.cli.dcm:main"
+peyemmv-dcmx20           = "peyemmv_ga.cli.dcmx20:main"
+peyemmv-compare          = "peyemmv_ga.cli.compare_generators:main"
+peyemmv-evaluate-tstr    = "peyemmv_ga.cli.evaluate_tstr:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

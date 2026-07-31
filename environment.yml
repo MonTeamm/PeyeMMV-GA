@@ -1,0 +1,16 @@
+name: peyemmv-ga
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.13
+    - numpy=2.2.6
+    - pandas=3.0.0
+    - scipy=1.17.1
+    - tqdm=4.67.3
+    - scikit-learn=1.8.0
+    - matplotlib=3.10.8
+    - statsmodels=0.14.6
+    - pip
+    - pip:
+          - -e .

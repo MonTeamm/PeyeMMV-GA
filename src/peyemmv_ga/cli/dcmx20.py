@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-from Utils import (
+from peyemmv_ga.utils import (
     ensure_dir, safe_float, stable_seed_from_string,
     normalize_task_name, infer_subject_task_from_path,
     list_fixation_files, find_raw_file,

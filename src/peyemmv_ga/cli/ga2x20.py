@@ -38,12 +38,7 @@ warnings.filterwarnings('ignore')
 sys.stdout.reconfigure(encoding='utf-8')
 
 # ======================== IMPORT FROM engine.py ========================
-_HERE    = os.path.dirname(os.path.abspath(__file__))   # FIX: was commented out
-_P1_FILE = os.path.join(_HERE, 'engine.py')
-spec = importlib.util.spec_from_file_location('_p1', _P1_FILE)
-_p1  = importlib.util.module_from_spec(spec)
-sys.modules["_p1"] = _p1   # required for Python 3.13 dataclass resolution
-spec.loader.exec_module(_p1)
+from peyemmv_ga import engine as _p1
 
 generate_displacement = _p1.generate_displacement
 combine_seed          = _p1.combine_seed

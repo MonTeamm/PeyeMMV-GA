@@ -36,12 +36,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 # ============================================================
 # IMPORT from engine.py
 # ============================================================
-_HERE = os.path.dirname(os.path.abspath(__file__))
-_P2_FILE = os.path.join(_HERE, "engine.py")
-_spec = importlib.util.spec_from_file_location("_p2", _P2_FILE)
-_p2 = importlib.util.module_from_spec(_spec)
-sys.modules["_p2"] = _p2
-_spec.loader.exec_module(_p2)
+from peyemmv_ga import engine as _p2
 
 load_raw_gaze = _p2.load_raw_gaze
 load_fixations = _p2.load_fixations

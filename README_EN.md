@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1249778361.svg)](https://doi.org/10.5281/zenodo.21725842)
+
 # PeyeMMV Synthetic Gaze Generation — User Guide (English)
 
 > **Research project**: Synthetic gaze data generation for dyslexia detection using fractional Brownian motion (fBm) optimised by a Genetic Algorithm (GA2), compared against Stochastic Gaussian Generation (SGG) and Deterministic Centroid Minimisation (DCM) baselines.
@@ -60,78 +62,63 @@ Python **3.10 or later** is required. Tested on Python 3.11 and 3.12.
 
 ---
 
-## Running the full pipeline
+## Quick Start & Reproducing the full pipeline
 
-> **Note — command formatting**: All commands below are written on a single line for maximum compatibility. The `\` line-continuation syntax works on Linux/macOS. On **Windows**, replace `\` with `` ` `` (PowerShell) or remove line breaks entirely and type as one line.
+Since the project is packaged as a standard Python software, you can execute the pipeline using the installed CLI commands.
 
-### Phase 1 — Find optimal θ\* parameters
+````bash
+# 1. Install the package
+pip install peyemmv-ga-Mon
 
-```bash
-python find_theta_ga2.py --data_dir ./data --output_root ./syn_output --pop 100 --gens 50 --w1 8 --w2 2 --w3 10 --max_workers 4
-```
+# 2. Optimize subject-task parameters
+peyemmv-find-theta \
+  --data_dir ./data \
+  --output_root ./syn_output \
+  --pop 100 \
+  --gens 50 \
+  --w1 8 \
+  --w2 2 \
+  --w3 10
 
-**Outputs**:
+# 3. Generate one GA2 dataset per subject-task
+peyemmv-ga2-generate \
+  --data_dir ./data \
+  --output_dir ./ga2_output \
+  --theta_csv ./syn_output/ga2_theta_star.csv
 
-- `syn_output/ga2_theta_star.csv` — optimal parameters per subject-task
-- `syn_output/ga2_theta_summary.json` — summary statistics
-- `syn_output/ga2_theta_checkpoint.json` — checkpoint (resume-safe if interrupted)
+# 4. Generate repeated sets for TSTR
+peyemmv-ga2x20 \
+  --theta_csv ./syn_output/ga2_theta_star.csv \
+  --output_root ./ga2_tstr_output \
+  --n_sets 20
 
-| Argument        | Default        | Description               |
-| --------------- | -------------- | ------------------------- |
-| `--data_dir`    | `./data`       | ETDD70 data directory     |
-| `--output_root` | `./syn_output` | Output directory          |
-| `--pop`         | 100            | GA population size        |
-| `--gens`        | 50             | Number of GA generations  |
-| `--w1`          | 8.0            | Detection penalty weight  |
-| `--w2`          | 2.0            | Outlier penalty weight    |
-| `--w3`          | 10.0           | Spectral error weight     |
-| `--max_workers` | 4              | Parallel worker processes |
+peyemmv-sggx20 \
+  --data_dir ./data \
+  --output_dir ./sgg_output \
+  --tstr_output_dir ./sgg_tstr_output \
+  --n_sets 20
 
----
+peyemmv-dcmx20 \
+  --data_dir ./data \
+  --output_dir ./dcm_output \
+  --tstr_output_dir ./dcm_tstr_output \
+  --n_sets 20
 
-### Phase 2 — Generate one synthetic set (for comparison)
+# 5. Compare generation methods
+peyemmv-compare \
+  --data_dir ./data \
+  --ga2_dir ./ga2_output \
+  --sgg_dir ./sgg_output \
+  --dcm_dir ./dcm_output \
+  --output_root ./phase1_results
 
-```bash
-python ga2_generate.py --data_dir ./data --output_dir ./ga2_output --theta_csv ./syn_output/ga2_theta_star.csv --max_workers 4
-
-python sgg.py --data_dir ./data --output_dir ./sgg_output
-
-python dcm.py --data_dir ./data --output_dir ./dcm_output
-```
-
----
-
-### Phase 3 — Compare the three methods
-
-```bash
-python compare_generators.py --data_dir ./data --ga2_dir ./ga2_output --sgg_dir ./sgg_output --dcm_dir ./dcm_output --output_root ./phase3_results
-```
-
----
-
-### Phase 4 — Generate 20 sets each (TSTR)
-
-```bash
-python ga2x20.py --theta_csv ./syn_output/ga2_theta_star.csv --output_root ./ga2_tstr_output --n_sets 20 --max_workers 4
-
-python sggx20.py --data_dir ./data --output_dir ./sgg_output --tstr_output_dir ./sgg_tstr_output --n_sets 20
-
-python dcmx20.py --data_dir ./data --output_dir ./dcm_output --tstr_output_dir ./dcm_tstr_output --n_sets 20
-```
-
-**Expected output**: 2,800 files per method (140 subject-task pairs × 20 sets).
-
----
-
-### Phase 5 — TSTR evaluation
-
-```bash
-python evaluate_tstr.py --syn_root ./ga2_tstr_output --data_dir ./data --output_root ./tstr_results/ga2 --classifier all
-
-python evaluate_tstr.py --syn_root ./sgg_tstr_output --data_dir ./data --output_root ./tstr_results/sgg --classifier all
-
-python evaluate_tstr.py --syn_root ./dcm_tstr_output --data_dir ./data --output_root ./tstr_results/dcm --classifier all
-```
+# 6. Evaluate GA2 with TSTR
+peyemmv-evaluate-tstr \
+  --syn_root ./ga2_tstr_output \
+  --data_dir ./data \
+  --output_root ./tstr_results/ga2 \
+  --classifier all \
+  --n_sets 20
 
 ---
 
@@ -141,7 +128,7 @@ python evaluate_tstr.py --syn_root ./dcm_tstr_output --data_dir ./data --output_
 find ./ga2_tstr_output -name "*_metrics_syn_*.csv" | wc -l
 find ./sgg_tstr_output -name "*_metrics_syn_*.csv" | wc -l
 find ./dcm_tstr_output -name "*_metrics_syn_*.csv" | wc -l
-```
+````
 
 Target: **2,800 files** per method.
 
@@ -163,10 +150,11 @@ All random seeds are derived deterministically from subject ID, task name, and a
 
 ---
 
-## Citation
+## Citation and Code Availability
 
-DOIS of the ETDD70 dataset:
+The Python package `peyemmv-ga-Mon` implementing the proposed framework is openly available via `pip install peyemmv-ga-Mon`.
 
-```
-[https://doi.org/10.5281/zenodo.17513247]
-```
+- **PyPI Package**: [https://pypi.org/project/peyemmv-ga-Mon/](https://pypi.org/project/peyemmv-ga-Mon/)
+- **Software Archive (DOI)**: [https://doi.org/10.5281/zenodo.21725842](https://doi.org/10.5281/zenodo.21725842)
+- **Dataset Archive (ETDD70)**: [https://doi.org/10.5281/zenodo.17513247](https://doi.org/10.5281/zenodo.17513247)
+- **Version used in the paper**: `v1.0.0`

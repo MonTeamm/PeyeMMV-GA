@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "peyemmv-ga-Mon"
-version = "1.0.0"
+version = "1.0.1"
 description = "GA-optimized fBm synthetic gaze generation for dyslexia detection (PeyeMMV inverse problem)"
 readme = "README_EN.md"
 license = {text = "MIT"}
